@@ -59,7 +59,7 @@
 
                 // Assert
                 Assert.IsNotNull(result);
-                Assert.AreEqual(3, result.Id); // Verifica se a Order com Id 3 tem o maior valor.
+                Assert.AreEqual(3, result.Id); // Verifica se a Order retornada é igual a de maior valor (3)
             }
         }
     }
