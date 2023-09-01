@@ -39,5 +39,22 @@ namespace TreinamentoTestesCore.Domain.Services
         {
             return _orderRepository.GetAllOrders();
         }
+
+        public Order GetOrderWithHighestValue()
+        {
+            var orders = _orderRepository.GetAllOrders();
+
+            Order orderWithHighestValue = null;
+
+            if (orders != null && orders.Any())
+            {
+                var list = orders.ToList();
+                list.Sort((o1, o2) => o2.TotalPrice.CompareTo(o1.TotalPrice));
+                orderWithHighestValue = list[0];
+            }
+
+            return orderWithHighestValue;
+        }
+
     }
 }

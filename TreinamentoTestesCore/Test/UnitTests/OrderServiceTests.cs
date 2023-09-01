@@ -34,7 +34,33 @@
                 Assert.AreEqual(199.98m, result.TotalPrice);
             }
 
-            // Add more test methods here...
+            [TestMethod]
+            public void GetOrderWithHighestValue_ReturnsOrderWithHighestValue()
+            {
+                // Arrange
+                var orderRepositoryMock = new Mock<IOrderRepository>();
+                var mockProductService = new Mock<IProductService>();
+
+
+                // Configurar o mock para retornar algumas orders fictícias
+                var orders = new List<Order>
+                {
+                    new Order { Id = 1, TotalPrice = 100.00m },
+                    new Order { Id = 2, TotalPrice = 75.50m },
+                    new Order { Id = 3, TotalPrice = 150.25m }
+                };
+
+                orderRepositoryMock.Setup(repo => repo.GetAllOrders()).Returns(orders);
+
+                var orderService = new OrderService(mockProductService.Object, orderRepositoryMock.Object);
+
+                // Act
+                var result = orderService.GetOrderWithHighestValue();
+
+                // Assert
+                Assert.IsNotNull(result);
+                Assert.AreEqual(3, result.Id); // Verifica se a Order com Id 3 tem o maior valor.
+            }
         }
     }
 }

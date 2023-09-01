@@ -21,6 +21,7 @@ services.AddScoped<IOrderService, OrderService>();
 
 // Repositórios
 services.AddScoped<IOrderRepository, OrderRepository>();
+services.AddScoped<IProductRepository, ProductRepository>();
 
 services.AddControllers();
 
