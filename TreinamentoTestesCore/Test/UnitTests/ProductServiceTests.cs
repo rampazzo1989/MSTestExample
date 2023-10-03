@@ -16,7 +16,7 @@ namespace TreinamentoTestesCore.Test.UnitTests
             // Arrange
             var mockProductRepository = new Mock<IProductRepository>();
             mockProductRepository.Setup(repository => repository.GetProductById(It.IsAny<int>()))
-                .Returns(new Product { Id = 1, Name = "Test Product", Price = 99.99m });
+                .Returns(() => new Product { Id = 1, Name = "Test Product", Price = 99.99m });
 
             var productService = new ProductService(mockProductRepository.Object);
 
