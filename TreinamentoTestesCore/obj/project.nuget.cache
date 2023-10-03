@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BuPc6UZwZzsh3EKiUTpf1cVB62ciCwyVMID2OczSma6TsRyuN8jUgo1m93qZ5ObMHQxGzXJtSmDgm0aQcwG+HA==",
+  "dgSpecHash": "E+mH1Pvax1toKRo8JjeVnsMIBgPovo6wmk2hV5dDuntAexxewp8FgKT0hQNDl3wdxE6tgDoncIBgjuz2OMhWPw==",
   "success": true,
   "projectFilePath": "C:\\Users\\rampa\\source\\repos\\TreinamentoTestesCore\\TreinamentoTestesCore\\TreinamentoTestesCore.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\rampa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "C:\\Users\\rampa\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
     "C:\\Users\\rampa\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.11\\microsoft.entityframeworkcore.design.7.0.11.nupkg.sha512",
+    "C:\\Users\\rampa\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.11\\microsoft.entityframeworkcore.inmemory.7.0.11.nupkg.sha512",
     "C:\\Users\\rampa\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "C:\\Users\\rampa\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\7.0.11\\microsoft.entityframeworkcore.sqlite.7.0.11.nupkg.sha512",
     "C:\\Users\\rampa\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\7.0.11\\microsoft.entityframeworkcore.sqlite.core.7.0.11.nupkg.sha512",
