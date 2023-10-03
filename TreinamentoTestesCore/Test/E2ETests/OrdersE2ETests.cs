@@ -16,23 +16,11 @@ namespace SimpleApiDDD.Test.E2ETests
     {
         private WebApplicationFactory<Program> _factory;
         private HttpClient _client;
-        //private Mock<IOrderRepository> _orderRepositoryMock;
-        //private Mock<IProductRepository> _productRepositoryMock;
-        private DbContextOptions<AppDbContext> _dbContextOptions;
-        private AppDbContext _dbContext;
 
 
         [TestInitialize]
         public void Initialize()
         {
-            // Configurar mocks para os repositórios
-            //_orderRepositoryMock = new Mock<IOrderRepository>();
-            //_productRepositoryMock = new Mock<IProductRepository>();
-
-            // Configurar as opções do DbContext para usar um banco de dados SQLite em memória
-            //_dbContextOptions = new DbContextOptionsBuilder<AppDbContext>()
-            //    .UseInMemoryDatabase(databaseName: "TestDatabase")
-            //    .Options;
 
             _factory = new WebApplicationFactory<Program>()
                 .WithWebHostBuilder(builder =>
@@ -53,9 +41,6 @@ namespace SimpleApiDDD.Test.E2ETests
                 });
 
             _client = _factory.CreateClient();
-
-            // Obter o DbContext para inserir e remover registros temporários
-            //_dbContext = _factory.Services.GetRequiredService<AppDbContext>();
         }
 
         [TestCleanup]
@@ -63,9 +48,6 @@ namespace SimpleApiDDD.Test.E2ETests
         {
             _client.Dispose();
             _factory.Dispose();
-
-            // Limpar o banco de dados em memória após o teste
-            //_dbContext.Database.EnsureDeleted();
         }
 
         [TestMethod]
