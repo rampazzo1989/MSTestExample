@@ -1,6 +1,8 @@
 using TreinamentoTestesCore.Domain.Interfaces;
 using TreinamentoTestesCore.Domain.Services;
+using TreinamentoTestesCore.Infra;
 using TreinamentoTestesCore.Infra.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +24,12 @@ services.AddScoped<IOrderService, OrderService>();
 // Repositórios
 services.AddScoped<IOrderRepository, OrderRepository>();
 services.AddScoped<IProductRepository, ProductRepository>();
+
+// Configurar o DbContext com injeção de opções
+services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlite("database.db");
+});
 
 services.AddControllers();
 

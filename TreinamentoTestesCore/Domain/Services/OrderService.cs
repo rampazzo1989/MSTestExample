@@ -40,6 +40,11 @@ namespace TreinamentoTestesCore.Domain.Services
             return _orderRepository.GetAllOrders();
         }
 
+        public Order GetOrder(int orderId)
+        {
+            return _orderRepository.GetById(orderId);
+        }
+
         public Order GetOrderWithHighestValue()
         {
             var orders = _orderRepository.GetAllOrders();

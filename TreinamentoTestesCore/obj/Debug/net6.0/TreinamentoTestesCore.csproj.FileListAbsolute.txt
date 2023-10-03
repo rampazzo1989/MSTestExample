@@ -456,3 +456,4 @@ C:\Users\rampa\source\repos\TreinamentoTestesCore\TreinamentoTestesCore\bin\Debu
 C:\Users\rampa\source\repos\TreinamentoTestesCore\TreinamentoTestesCore\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\rampa\source\repos\TreinamentoTestesCore\TreinamentoTestesCore\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\rampa\source\repos\TreinamentoTestesCore\TreinamentoTestesCore\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\rampa\source\repos\TreinamentoTestesCore\TreinamentoTestesCore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll

@@ -6,5 +6,6 @@ namespace TreinamentoTestesCore.Domain.Interfaces
     {
         void SaveOrder(Order order);
         IEnumerable<Order> GetAllOrders();
+        Order GetById(int id);
     }
 }

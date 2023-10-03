@@ -28,5 +28,13 @@ namespace TreinamentoTestesCore.Web.Controllers
             var orders = _orderService.GetOrders();
             return Ok(orders);
         }
+
+        [HttpGet]
+        [Route("{orderId}")]
+        public ActionResult<IEnumerable<Order>> GetOrder(int orderId)
+        {
+            var order = _orderService.GetOrder(orderId);
+            return Ok(order);
+        }
     }
 }

@@ -19,5 +19,9 @@ namespace TreinamentoTestesCore.Infra
         {
             // Configure as relações e restrições das entidades aqui, se necessário.
         }
+
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+        }
     }
 }
